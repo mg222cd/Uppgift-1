@@ -71,8 +71,6 @@ public class Triangle
             return true;
         return false;
     }
-
-    public static string Equals { get; set; }
 }
 
 /* Exempel på användning: */
