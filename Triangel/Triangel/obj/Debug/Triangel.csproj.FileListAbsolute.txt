@@ -1,5 +1,0 @@
-c:\users\marike\documents\visual studio 2013\Projects\Triangel\Triangel\bin\Debug\Triangel.exe.config
-c:\users\marike\documents\visual studio 2013\Projects\Triangel\Triangel\obj\Debug\Triangel.csprojResolveAssemblyReference.cache
-c:\users\marike\documents\visual studio 2013\Projects\Triangel\Triangel\obj\Debug\Triangel.Properties.Resources.resources
-c:\users\marike\documents\visual studio 2013\Projects\Triangel\Triangel\obj\Debug\Triangel.csproj.GenerateResource.Cache
-C:\Users\Marike\Documents\GitHub\Uppgift-1\Triangel\Triangel\bin\Debug\Triangel.exe.config

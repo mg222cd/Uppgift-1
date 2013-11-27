@@ -1,5 +1,0 @@
-c:\Users\Marike\documents\visual studio 2013\Projects\Triangel\UnitTestProjectTriangel\bin\Debug\UnitTestProjectTriangel.dll
-c:\Users\Marike\documents\visual studio 2013\Projects\Triangel\UnitTestProjectTriangel\bin\Debug\UnitTestProjectTriangel.pdb
-c:\Users\Marike\documents\visual studio 2013\Projects\Triangel\UnitTestProjectTriangel\obj\Debug\UnitTestProjectTriangel.csprojResolveAssemblyReference.cache
-c:\Users\Marike\documents\visual studio 2013\Projects\Triangel\UnitTestProjectTriangel\obj\Debug\UnitTestProjectTriangel.dll
-c:\Users\Marike\documents\visual studio 2013\Projects\Triangel\UnitTestProjectTriangel\obj\Debug\UnitTestProjectTriangel.pdb
