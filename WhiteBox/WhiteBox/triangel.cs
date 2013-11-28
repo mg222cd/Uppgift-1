@@ -53,14 +53,14 @@ public class Triangle
 
     public bool isScalene()
     {
-        if (uniqueSides() == 1)
+        if (uniqueSides() == 3)
             return true;
         return false;
     }
 
     public bool isEquilateral()
     {
-        if (uniqueSides() == 3)
+        if (uniqueSides() == 1)
             return true;
         return false;
     }
@@ -71,7 +71,10 @@ public class Triangle
             return true;
         return false;
     }
+
 }
+
+
 
 /* Exempel på användning: */
 /* class Program { */

@@ -12,7 +12,7 @@ namespace Tests
     public class TriangleTests
     {
 
-        //Test av värden...
+        //Test av värden... ska bli FAIL
         [TestMethod()]
         [ExpectedException(typeof(ArgumentException))]
         public void isExceptionWithZero()
@@ -27,6 +27,7 @@ namespace Tests
             Triangle unvalidTriangle = new Triangle(-1.0, -2.0, -3.0); //...får ej vara negativa
         }
         
+        /*
         //Om värdet är positivt men < 1 ska det inte avrundas till liksidig triangel
         [TestMethod()]
         public void isNotEquilateralWithZero()
@@ -34,7 +35,8 @@ namespace Tests
             Triangle notEquilateralTriangle = new Triangle(0.2, 0.2, 0.4);
             Assert.IsFalse(notEquilateralTriangle.isEquilateral());
         }
-
+         * */
+        /*
         //test av Scalene/oliksidig med nolldecimaler
         [TestMethod()]
         public void isScaleneWithZero()
@@ -57,40 +59,14 @@ namespace Tests
         {
             Triangle triangle = new Triangle(-0.9, -0.9, 0.9);
             Assert.IsTrue(triangle.isEquilateral());
-        }
-
-        //test att enbart 1 st blir svaret, i 3 kombinationer
-        [TestMethod()]
-        public void isEquilateralOnly()
-        {
-            Triangle triangle = new Triangle(9, 9, 9);
-            Assert.IsTrue(triangle.isEquilateral());
-            Assert.IsFalse(triangle.isIsosceles());
-            Assert.IsFalse(triangle.isScalene());
-        }
-        [TestMethod()]
-        public void isIsoscelesOnly()
-        {
-            Triangle triangle = new Triangle(15, 15, 10);
-            Assert.IsFalse(triangle.isEquilateral());
-            Assert.IsTrue(triangle.isIsosceles());
-            Assert.IsFalse(triangle.isScalene());
-        }
-        [TestMethod()]
-        public void isScaleneOnly()
-        {
-            Triangle triangle = new Triangle(30, 30, 30);
-            Assert.IsFalse(triangle.isEquilateral());
-            Assert.IsFalse(triangle.isIsosceles());
-            Assert.IsTrue(triangle.isScalene());
-        }
+        }*/
 
         //Test av isScalene/oliksidig
-        //...med rätta värden
+        //...med rätta värden !!!
         [TestMethod()]
         public void isScaleneTrue()
         {
-            Triangle triangle = new Triangle(10, 30, 22);
+            Triangle triangle = new Triangle(10, 30, 40);
             Assert.IsTrue(triangle.isScalene());
         }
         //...med felaktiga värden
@@ -102,14 +78,14 @@ namespace Tests
         }
 
         //Test av isEquilateral
-        //...med rätta värden
+        //...med rätta värden !!!
         [TestMethod()]
         public void isEquilateralTrue()
         {
-            Triangle triangle = new Triangle(9, 9, 9);
+            Triangle triangle = new Triangle(9.0, 9.0, 9.0);
             Assert.IsTrue(triangle.isEquilateral());
         }
-        //...med felaktiva värden
+        //...med felaktiva värden !!!
         [TestMethod()]
         public void isEquilateralFalse()
         {
@@ -181,7 +157,7 @@ namespace Tests
         public void isPointWithExceptionTooMany()
         {
             Point a = new Point(12, 5);
-            Point b = new Point(50, 4);
+            Point b = new Point(50, 4); 
             Point c = new Point(23, 7);
             Point d = new Point(1, 5);
 
