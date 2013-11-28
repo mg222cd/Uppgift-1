@@ -143,7 +143,50 @@ namespace Tests
 
             Triangle drawTriangle = new Triangle(a, b, c);
         }
-        
+        //...med undantag, bara 0-värden
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void isPointWithException()
+        {
+            Point a = new Point(0, 0);
+            Point b = new Point(0, 0);
+            Point c = new Point(0, 0);
+
+            Triangle drawTriangle = new Triangle(a, b, c);
+        }
+        //...med undantag, 2 identiska värden
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void isPointWithExceptionTwoEqual()
+        {
+            Point a = new Point(12, 0);
+            Point b = new Point(12, 0);
+            Point c = new Point(1, 2);
+
+            Triangle drawTriangle = new Triangle(a, b, c);
+        }
+        //...med undantag, för få värden
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void isPointWithExceptionTooFew()
+        {
+            Point a = new Point(12, 5);
+            Point b = new Point(50, 4);
+
+            Triangle drawTriangle = new Triangle(new Point[] {a, b});
+        }
+        //...med undantag, för många värden
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void isPointWithExceptionTooMany()
+        {
+            Point a = new Point(12, 5);
+            Point b = new Point(50, 4);
+            Point c = new Point(23, 7);
+            Point d = new Point(1, 5);
+
+            Triangle drawTriangle = new Triangle(new Point[] { a, b, c, d });
+        }
 
 
     }
